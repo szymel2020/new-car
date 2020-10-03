@@ -1,3 +1,47 @@
+body {
+	font-size: 1em;
+}
+
 h1 {
 	text-shadow: 2px 4px 3px purple;
+	text-align: center;
+	background-color:#ffd800;
+}
+
+.container {
+	font-size: 1.2em;
+	overflow: auto;
+	margin: auto;
+	width: 500px;
+}
+
+#my-form {
+	background: #bcb2b2;
+}
+
+.btn {
+	display: block;
+	margin: 5px 0;
+	padding: 10px 15px;
+	overflow: auto;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	background-color:darkseagreen;
+	margin: 1.2em;
+}
+
+.error {
+	background : orangered;
+	color:whitesmoke;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 700;
+	padding: 5px;
+	margin: 5px;
 }
