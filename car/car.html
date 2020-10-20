@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>New Car</title>
 		<link	rel="stylesheet" href="car.css">
+	
 	</head>
 	<body>
 		<div>
@@ -17,28 +18,49 @@
 		<section class="container">
 			<form id="my-form">
 				<h1>Wprowadź dane</h1>
+
+	<body  id="body">
+	
+	<h1 id="h1">Główny tytuł</h1>
+
+		<div class="container" >
+			<button  onmouseout="clearDate()" onmouseover="showDate() ">data dzisiejsza</button>
+			<button  onclick="coulrue() ">kolor tła</button>
+			<form method="post"  name="myForm">
 				<div>
 					<label for="name">Model:</label>
 					<input type="text" id="name">
+					<label>Temperatura *C</label>
+					<input type="number" name="firstName" onchange="changeImg(this)" id="firstName" />
+					<button onclick="change()">xxx</button>
 				</div>
+				<br/>
+				<!--<div>
+					<label>Last Name</label>
+					<input type="text" name="lastName" id="lastName"/>
+				</div>-->
+				<br/>
 				<div>
-					<label for="email">marka:</label>
-					<input type="text" id="email">
+					<label>Background title</label>
+					<select name="background" id="background" onchange="changeBackground(this)">
+						<option value="red">Red</option>
+						<option value="Blue">Blue</option>
+						<option value="green">Green</option>
+					</select>
 				</div>
-					<input class="btn" type="submit" value="Submit">
+				<br/>
+				<input type="submit" value="Submit"/>
 			</form>
+		</div>
 			
-				<ul id="users"></ul>
-				
-				<!--<ul class="items">
-					<li class="item">Auto 1</li>
-					<li class="item">Auto 2</li>
-					<li class="item">Auto 3</li>
-				</ul>-->
-		</section>
+				<!--<input id="b" type="number">-->
+	
 
+
+		<script src="main.js">
 		
-		<script  src="main.js"></script>
+		</script>
 	</body>
+		<h2 id="h2">Data</h2>
 	</html>
 
